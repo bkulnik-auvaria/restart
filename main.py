@@ -1,7 +1,7 @@
 
 # Enter first number: 2134
 # Enter second number: 2134
-# Enter the operation: +,-
+# Enter the operation: +,-,*
 # result: first number + second number
 
 print("Enter first number: ", end="")
@@ -21,10 +21,18 @@ print("The operation is: ", operation)
 
 # = ---> assign the right side to the left side
 # == ---> check for equality
+
+
+# if <CONDITION> :
+
 if operation == "+":
     result = x + y # All i write here, is totally ignored by python
 elif operation == "-":
     result = x - y
+elif operation == "*":
+    result = x * y
+elif operation == "/":
+    result = x / y
 else:
     print("Invalid operation")
     exit(-1)
